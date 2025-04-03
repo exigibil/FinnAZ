@@ -1,7 +1,8 @@
 import React from "react";
 import ActiveImobilizate from "../../Componenets/ActiveStructure/ActiveImobilizate/ActiveImobilizate.jsx";
-
+import ActiveCirculante from "../../Componenets/ActiveStructure/ActiveCirculante/ActiveCirculante.jsx";
 import styles from "./Dashboard.module.css";
+import TotalActiv from '../../Componenets/ActiveStructure/Total Activ/TotalActiv.jsx';
 
 const Dashboard = () => {
   return (
@@ -12,15 +13,20 @@ const Dashboard = () => {
 
       <div className={styles.dashboardActivePasive}>
         <div className={styles.dashboardFinancials}>
+
           <div className={styles.financialsActive}>
                 <div className={styles.activeHeader}>
-                <h4>Active Structure</h4>
+                <p>Active Structure</p>
                 </div>
                 <div className={styles.dashboardComponents}>
-                <ActiveImobilizate />
-                    TODO: Active Circulante
+               <div> <ActiveImobilizate /></div>
+               <div> <ActiveCirculante /></div>
+               <div> <TotalActiv /> </div>
                 </div>
           </div>
+
+          <div className={styles.dashboarDash}></div>
+
           <div className={styles.financialsPassive}>
                     TODO:   Pasive structure
                     <ActiveImobilizate />
