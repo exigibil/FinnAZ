@@ -1,13 +1,12 @@
 
 import './App.css';
-import Dashboard from './Pages/Dashboard/Dashboard';
+import MainScreen from './Pages/MainScreen/MainScreen';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Dashboard />
-        
+       <MainScreen />
         
        
       </header>

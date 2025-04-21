@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../Imobilizari.module.css";
+import styles from "../ActiveStructure.module.css";
 
 const ImobilizariCorporale = () => {
   return (

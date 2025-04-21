@@ -1,5 +1,5 @@
 import React from "react";
-import styles from '../Imobilizari.module.css';
+import styles from '../ActiveStructure.module.css';
 
 const TotalActiv = () => {
   const getTotal = () => {
@@ -13,7 +13,7 @@ const TotalActiv = () => {
       <div className={styles.activeContainer}>
         <div className={styles.componentContainer}>
           <div className={styles.componentClass}>
-            <h3>Total Active</h3>
+            <div className={styles.titleClass}>Total Active</div>
             <div className={styles.componentInterval}>
               <p>{getTotal()}</p>
             </div>

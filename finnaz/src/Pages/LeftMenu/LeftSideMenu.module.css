@@ -1,0 +1,74 @@
+    .leftMenuContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 10px;
+        width: 300px;
+        height: 100%;
+        background-color: rgb(121, 70, 4);
+
+        .leftMenu {
+            
+            .leftMenuIcon {
+                display: flex;
+                justify-content: center;
+                font-size: 30px;
+                padding: 10px;
+            }   
+
+            .leftMenuHeader {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 20px;
+                font-weight: bold;
+                color: #ffffff;
+                margin: 0px;
+                .legalPersonContainer {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                   .legalPersonBox {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    .legalPerson {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2px;
+                        justify-content: center;
+                        align-items: center;
+                        .legalPersonTitleBox {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 5px;
+                            .legalPersonIcon {
+                                display: flex;
+                                justify-content: center;
+                                font-size: 20px;
+                                padding: 5px;
+                                margin: 0px;
+                            }
+                            .chevronOpen {
+                                transform: rotate(90deg);
+                              }
+                        }
+                        .legalPersonInfo {
+                            p {
+                                margin: 5px 0px;
+                                font-size: 16px;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                   }
+                   
+                }
+            }
+        }
+    }

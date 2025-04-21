@@ -1,3 +1,12 @@
+
+
+.componenertText{
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
 .imobilizariContainer {
   display: flex;
   flex-direction: column;
@@ -13,18 +22,20 @@
     color: #ffffff;
   }
 
-  .titleClass {
+  .titleClass{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
     padding: 0% 0px 0px 10px;
-    font-size: 15px;
-    font-weight: bold;
     color: #ffffff;
     display: flex;
     justify-content: flex-start;
+    font-weight: bold;
     h4 {
       margin: 0px;
     }
   }
-
   .activeContainer {
     font-size: 20px;
     display: flex;

@@ -1,0 +1,15 @@
+.navigationBar {
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 5px 0px;
+        background-color: #333;
+        list-style-type: none;
+      
+    }
+ 
+}
