@@ -7,18 +7,18 @@ import LeftSideMenu from "../LeftMenu/LeftSideMenu.jsx";
 const MainScreen = () => {
   return (
     <div className={styles.mainScreenContainer}>
-      <div>
-        {" "}
-        <NavigationBar />{" "}
-      </div>
-
-      <div className={styles.ContentMainContainer}>
+      <div className={styles.ContentContainer}>
         <div className={styles.leftMenuContainer}>
           <LeftSideMenu />
         </div>
 
         <div className={styles.rightMenuContainer}>
-          <Dashboard />
+          <div className={styles.userDataContainer}>
+            <NavigationBar />
+          </div>
+          <div>
+            <Dashboard />
+          </div>
         </div>
       </div>
     </div>

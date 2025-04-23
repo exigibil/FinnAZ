@@ -4,12 +4,14 @@ import styles from "./NavigationBar.module.css";
 const NavigationBar = () => {
 return (
     <div className={styles.navigationBar}>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Services</li>
-        <li>Contact</li>
-      </ul>
+      <div>
+        <div>User: <span>Topa Adrian</span></div>
+        <div>Language: <span>En</span></div>
+        <div>Date: <span>Today</span> </div>
+      </div>
+       
+        
+      
     </div>
   );
 }

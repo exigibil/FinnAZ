@@ -1,12 +1,32 @@
 import React, { useState } from "react";
 import styles from "./LeftSideMenu.module.css";
-import { RxRows, RxBackpack, RxChevronDown, RxChevronLeft  } from "react-icons/rx";
+import { RxRows, RxBackpack, RxChevronDown } from "react-icons/rx";
 
 const LeftSideMenu = () => {
   const [openDropdowns, setOpenDropdowns] = useState({
     legalPerson1: false,
     legalPerson2: false,
   });
+
+  const [menuDropdown, setMenuDropdown] = useState({
+    Menu1: false,
+    Menu2: false,
+    Menu3: false,
+  });
+
+  const menuBurgerIcon = () => {
+    setMenuDropdown((prev) => ({
+      ...prev,
+      Menu1: !prev.Menu1,
+      Menu2: !prev.Menu2,
+      Menu3: !prev.Menu3,
+    }));
+    if (menuDropdown) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  };
 
   const toggleDropdown = (person) => {
     setOpenDropdowns((prev) => ({
@@ -19,7 +39,19 @@ const LeftSideMenu = () => {
     <div className={styles.leftMenuContainer}>
       <div className={styles.leftMenu}>
         <div className={styles.leftMenuIcon}>
-          <RxRows />{" "}
+          <RxRows
+            onClick={() => menuBurgerIcon("Menu")}
+            style={{ cursor: "pointer" }}
+          />
+          {menuDropdown.Menu1 && (
+            <div className={styles.menuDropdown}>
+              <div className={styles.menuItem}>
+                <a>Menu 1</a>
+              </div>
+              <div className={styles.menuItem}>Menu 2</div>
+              <div className={styles.menuItem}>Menu 3</div>
+            </div>
+          )}
         </div>
 
         <div className={styles.leftMenuHeader}>
@@ -45,7 +77,7 @@ const LeftSideMenu = () => {
                       openDropdowns.legalPerson1 ? styles.chevronOpen : ""
                     }`}
                   >
-                    <RxChevronDown /> 
+                    <RxChevronDown />
                   </div>
                 </div>
                 {openDropdowns.legalPerson1 && (
