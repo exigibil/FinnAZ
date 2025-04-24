@@ -12,6 +12,7 @@ const ActiveImobilizate = () => {
            
             <div className={styles.activeContainer}>
                 <ClassTitles />
+                <div className={styles.titleClass}> Imobilizari</div>
                 <ImobilizariNecorporale />
                 <ImobilizariCorporale />
                 <ImobilizariFinanciare />

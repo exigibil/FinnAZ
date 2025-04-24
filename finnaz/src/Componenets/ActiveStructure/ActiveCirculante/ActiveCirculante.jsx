@@ -12,17 +12,17 @@ const ActiveCirculante = () => {
     
     return (
         <div className={styles.imobilizariContainer}>
-           <div className={styles.titleClass}><h4>Active Circulante</h4></div>
-           TODO: css style on title
+        
             <div className={styles.activeContainer}>
-                
+            <div className={styles.titleClass}>Active Circulante</div>
                 <Stocks />
                 <MoneyBankAccounts />
                 <CreanteOverYear />
                 <CreanteUnderYear />
                 <LowTermInvestments />
                 <ExpensesInAdvance />
-               
+                 
+           TODO: css style on title
             </div>
 
             <div className={styles.activeTotals}>

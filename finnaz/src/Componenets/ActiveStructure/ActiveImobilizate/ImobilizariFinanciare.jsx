@@ -6,7 +6,7 @@ const ImobilizariFinanciare = () => {
     return (
        <div className={styles.imobilizariContainer}>
              <div className={styles.activeTitles}>
-               <h4>Imobilizari Financiare</h4>
+               Imobilizari Financiare
              </div>
        
              <div className={styles.activeContainer}>

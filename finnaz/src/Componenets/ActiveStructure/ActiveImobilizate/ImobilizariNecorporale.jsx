@@ -5,7 +5,7 @@ const ImobilizariNecorporale = () => {
   return (
     <div className={styles.imobilizariContainer}>
       <div className={styles.activeTitles}>
-        <h4>Imobilizari necorporale</h4>
+        Imobilizari necorporale
       </div>
 
       <div className={styles.activeContainer}>

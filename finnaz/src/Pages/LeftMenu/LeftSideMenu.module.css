@@ -17,10 +17,31 @@
       font-size: 20px;
       padding: 10px;
 
+      svg:hover {
+        color: #000000;
+        border-radius: 8%;
+        cursor: pointer;
+      }
+
       .menuDropdown {
         background-color: #8d5205e5;
         border-radius: 8%;
         padding: 10px;
+        :hover {
+          color: #ff5d5d;
+          border-radius: 8%;
+          cursor: pointer;
+        }
+         :active {
+          color: #000000;
+          border-radius: 8%;
+          cursor: pointer;
+        }
+        :focus {
+          color: #000000;
+          border-radius: 8%;
+          cursor: pointer;
+        }
       }
 
       .leftIconContainer {
@@ -90,5 +111,4 @@
         }
       }
     }
-  }
-}
+  }}

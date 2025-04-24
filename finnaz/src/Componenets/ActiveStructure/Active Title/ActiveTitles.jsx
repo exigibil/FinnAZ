@@ -1,19 +1,37 @@
-import React from "react";
-import styles from '../ActiveStructure.module.css';
+import React, { useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import styles from "../ActiveStructure.module.css";
 
 const ClassTitles = () => {
+  const [startDate, setStartDate] = useState(new Date());
+
   return (
     <div className={styles.componentContainer}>
-      <div className={styles.TitlesContainer}>
-        <div className={styles.componentClass}><h4>Class Titles</h4></div>
-        <div className={styles.componentInterval}>
-          <span>Luna / anul</span>
+      <div className={styles.titlesContainer}>
+        <div className={styles.componentClass}>
+          <h4>Time frame</h4>
         </div>
         <div className={styles.componentInterval}>
-          <span>Luna / anul</span>
+          <DatePicker
+          className={styles.datePicker}
+            selected={startDate}
+            onChange={(date) => setStartDate(date)}
+          />
         </div>
         <div className={styles.componentInterval}>
-          <span>Luna / anul</span>
+          <DatePicker
+          className={styles.datePicker}
+            selected={startDate}
+            onChange={(date) => setStartDate(date)}
+          />
+        </div>
+        <div className={styles.componentInterval}>
+          <DatePicker
+          className={styles.datePicker}
+            selected={startDate}
+            onChange={(date) => setStartDate(date)}
+          />
         </div>
       </div>
     </div>

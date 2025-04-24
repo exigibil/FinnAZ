@@ -19,7 +19,7 @@
         margin-right: 10px;
         width: 300px;
         height: 100%;
-        background-color: rgb(121, 70, 4);
+        background-color: #794604;
     }
     .rightMenuContainer {
         display: flex;
@@ -27,12 +27,11 @@
       
 
         .userDataContainer {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
+          
+            
             width: 100%;
             height: 100%;
-            background-color: rgb(121, 70, 4);
+            background-color: #794604;
         }
        
     }

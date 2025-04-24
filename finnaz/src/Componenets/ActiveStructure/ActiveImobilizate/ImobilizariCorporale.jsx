@@ -5,7 +5,7 @@ const ImobilizariCorporale = () => {
   return (
     <div className={styles.imobilizariContainer}>
       <div className={styles.activeTitles}>
-        <h4> Imobilizari corporale</h4>
+         Imobilizari corporale
       </div>
 
       <div className={styles.activeContainer}>

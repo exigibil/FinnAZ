@@ -7,9 +7,7 @@ import TotalActiv from '../../Componenets/ActiveStructure/Total Activ/TotalActiv
 const Dashboard = () => {
   return (
     <div className={styles.dashboardContainer}>
-      <div className={styles.dashboardHeader}>
-        <p>Welcome to the Dashboard</p>
-      </div>
+      
 
       <div className={styles.dashboardActivePasive}>
         <div className={styles.dashboardFinancials}>
@@ -25,10 +23,13 @@ const Dashboard = () => {
                 </div>
           </div>
 
-          <div className={styles.dashboarDash}></div>
+          <div className={styles.dashboardDash}></div>
 
           <div className={styles.financialsPassive}>
-                    TODO:   Pasive structure
+          <div className={styles.activeHeader}>
+                <p>Pasive Structure</p>
+                </div>
+           
                     <ActiveImobilizate />
           </div>
 
