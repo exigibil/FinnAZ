@@ -1,0 +1,28 @@
+.tableContainer {
+    padding: 1rem;
+    overflow-x: auto;
+    color: #ffffff;
+  }
+  
+  .dataTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  
+  .tableCell {
+    border: 1px solid #cccccc25;
+    padding: 8px;
+    text-align: left;
+    background-color: transparent #fdfdfd;
+    vertical-align: top;
+  }
+  
+  .dateInput {
+    margin-top: 4px;
+    width: 100%;
+    padding: 4px;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+  }
+  

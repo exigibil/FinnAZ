@@ -46,7 +46,7 @@ const LeftSideMenu = () => {
           {menuDropdown.Menu1 && (
             <div className={styles.menuDropdown}>
               <div className={styles.menuItem}>
-                <a>Menu 1</a>
+                Menu 1
               </div>
               <div className={styles.menuItem}>Menu 2</div>
               <div className={styles.menuItem}>Menu 3</div>

@@ -33,24 +33,20 @@
     .dashboardFinancials {
       display: flex;
       flex-direction: row;
-
-      .dashboardDash {
-        width: 1px;
-        height: calc(100% - 180px);
-        background-color: #ffffff;
-        margin: 0 5px;
-        margin-top: 15px;
-        box-shadow: .5px 0 0 #00000080;
-        opacity: 0.9;
-        transition: opacity 0.3s ease;
-        &:hover {
-          opacity: 1;
-        }
-        
-      }
-
       .financialsActive {
         
+       
+        .dashboardComponents {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+      }
+
+      .financialsPassive {
+        border-left: solid #E0E0E0 2px;
+        padding-left: 20px;
+        margin-left: 20px;
        
         .dashboardComponents {
           display: flex;

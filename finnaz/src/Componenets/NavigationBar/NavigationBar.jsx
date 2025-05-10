@@ -4,6 +4,7 @@ import styles from "./NavigationBar.module.css";
 import moment from "moment";
 import { HiOutlineCalendarDateRange } from "react-icons/hi2";
 
+
 const NavigationBar = () => {
   const [date, setDate] = useState(new Date());
   const [user, setUser] = useState("Topa Adrian");
@@ -22,6 +23,10 @@ const NavigationBar = () => {
             <MdLanguage />
             <span>{language}</span>
           </div>
+        </div>
+        <div>
+          Curs BNR
+          
         </div>
         <div className={styles.date}>
       
