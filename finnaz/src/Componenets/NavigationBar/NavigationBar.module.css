@@ -1,47 +1,127 @@
 .navigationBar {
+  .navigationBarLeft {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 5px 0px;
+    background-color: #333;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 
-    .navigationBarLeft{
+    .containerUser {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+
+      .userName {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+      .language {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+    }
+
+    .date {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-left: auto;
+    }
+    .bnrRate {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 5px;
+      padding: 5px;
+      background-color: #222222;
+      border-radius: 10px;
+      background-blend-mode: overlay;
+
+      .rateTitleContainer {
+        background-color: transparent;
+        padding: 5px;
+        font-family: "Roboto", sans-serif;
+        font-size: 0.85rem;
+        font-weight: 400;
         display: flex;
         flex-direction: row;
-        gap: 15px;
-        padding: 5px 0px;
-        background-color: #333;
-        list-style-type: none;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
-        width: 100%;
 
-        .containerUser{
-        
+        a {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          align-items: center;
+          text-decoration: none;
+          color: #ffffff;
+          font-size: 0.85rem;
+          font-weight: 400;
+          &:hover {
+            text-decoration: underline;
+            color: #ffffff;
+            transition: all 0.3s ease-in-out;
+            font-size: 0.9rem;
+          }
+          
+          .rateTitle {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            gap: 60px;
-
-            .userName {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 10px;
-    
-            }
-            .language {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 10px;
-            }
+            gap: 5px;
+            font-size: 0.85rem;
+            font-weight: 600;
+          }
+          .rateDate {
+            cursor: pointer;
+          }
         }
-       
+      }
+      .rateContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+        padding: 5px;
+        background-color: transparent;
 
-        .date {
+        .currencyRate {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 4px;
+          font-size: 0.85rem;
+          font-weight: 600;
+
+          .flagIconContainer {
             display: flex;
-            align-items: center;
+            flex-direction: row;
             justify-content: center;
-            gap: 10px;
-            margin-left: auto;
+            align-items: center;
+            gap: 5px;
+
+            .flagIcon {
+              font-size: 10px;
+              width: 1.5rem;
+            }
+          }
         }
-      
-    } 
+      }
+    }
+  }
 }
