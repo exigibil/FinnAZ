@@ -122,6 +122,18 @@
           }
         }
       }
+      .rateAddButton {
+          font-size: 20px;
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+        .rateAddButton:hover {
+          width: 1.5rem;
+          height: 1.5rem;
+          transition: all 0.3s ease-in-out;
+          font-size: 1.5rem;
+          color: #e9e7e7;
+        }
     }
   }
 }

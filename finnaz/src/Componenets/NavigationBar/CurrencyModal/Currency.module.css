@@ -1,0 +1,100 @@
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  padding: 20px;
+  .currencyContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    max-height: 80vh;
+    background-color: #c41717;
+    border-radius: 8px;
+    overflow-y: auto;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px,
+      rgba(0, 0, 0, 0.22) 0px 6px 6px;
+
+    .modalHeader {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background-color: #c41717;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    .closeButtonContainer {
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .closeButton {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #000000;
+      }
+      &:hover {
+        transition: color 0.3s ease-in-out;
+      }
+    }
+    .modalContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      .currencyData {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        margin: 0;
+        padding: 5px;
+
+        .currencyName {
+          font-weight: 600;
+          color: #ffffff;
+          display: flex;
+          padding: 5px;
+        }
+        .currencyAddButton {
+          font-size: 20px;
+          cursor: pointer;
+          color: #ffffff;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          
+          svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            &:hover {
+            color: #000000;
+            transition: all 0.3s ease-in-out;
+            font-size: 1.5rem;
+          }
+          }
+        }
+      }
+    }
+  }
+}
+
+.Modal {
+  max-width: calc(100vw - 48px);
+  max-height: calc(100vh - 24px);
+}
