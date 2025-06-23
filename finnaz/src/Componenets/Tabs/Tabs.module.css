@@ -1,0 +1,32 @@
+.tabList {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  background-color: #4e4e4e;
+
+  .financialButtonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .financialButtons {
+      padding: 5px 15px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      background-color: #3f51b5;
+      color: #ffffff;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #303f9f;
+      }
+      &.active {
+        background-color: #121858;
+        color: #ffffff;
+      }
+    }
+  }
+}
