@@ -1,14 +1,15 @@
 .dashboardContainer {
   display: flex;
   flex-direction: column;
+  width: 100vw;
+  background-color: #222222;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 5px;
   justify-content: center;
   align-items: center;
-  padding: 5px;
-  width: 100%;
   height: 100%;
   background-color: #222222;
-
-
 
   .activeHeader {
     display: flex;
@@ -36,8 +37,6 @@
       display: flex;
       flex-direction: row;
       .financialsActive {
-        
-       
         .dashboardComponents {
           display: flex;
           flex-direction: column;
@@ -46,10 +45,10 @@
       }
 
       .financialsPassive {
-        border-left: solid #E0E0E0 2px;
+        border-left: solid #e0e0e0 2px;
         padding-left: 20px;
         margin-left: 20px;
-       
+
         .dashboardComponents {
           display: flex;
           flex-direction: column;

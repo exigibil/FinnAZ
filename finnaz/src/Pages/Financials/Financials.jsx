@@ -1,16 +1,13 @@
 import React from 'react';
 import styles from './Financials.module.css'
+import FileInput from '../../Componenets/FileInput/Fileinput.jsx';
 
 
 const Financials =() => {
     return (
         <div className={styles.financialsContainer}>
-            <div className={styles.financialsHeader}>
-                <h1>Financials</h1>
-            </div>
-            <div className={styles.financialsContent}>
-                <p>Financial data and insights will be displayed here.</p>
-            </div>
+            <div> <FileInput /></div>
+            
         </div>
     )
 }
