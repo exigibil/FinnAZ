@@ -3,10 +3,13 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-right: 10px;
-  width: 300px;
+  padding: 10px;
+  width: 240px;
   height: 100%;
-  background-color: #794604;
+  background-color: #471111;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px #0000001a;
 
   .leftMenu {
     .leftMenuIcon {
@@ -32,7 +35,7 @@
           border-radius: 8%;
           cursor: pointer;
         }
-         :active {
+        :active {
           color: #000000;
           border-radius: 8%;
           cursor: pointer;
@@ -96,19 +99,18 @@
               }
             }
             .legalPersonInfo {
-                background-color: #8d5205e5;
-                border-radius: 8%;
-                padding: 5px 15px;
+              background-color: #8d5205e5;
+              border-radius: 8%;
+              padding: 5px 15px;
               p {
                 margin: 5px 0px;
                 font-size: 16px;
                 color: #ffffff;
-                
-              
               }
             }
           }
         }
       }
     }
-  }}
+  }
+}

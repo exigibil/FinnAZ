@@ -1,11 +1,11 @@
 .financialsContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     padding: 15px;
     background-color: #f4f4f4;
-    min-height: 100vh;
-    min-width: 80vw;
+    height: 100%;
+    width: 100%;
 
-    
+
 }

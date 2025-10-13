@@ -1,40 +1,58 @@
 .mainScreenContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  background-color: #0aa8d8;
+  gap: 4px;
+
+  .topContainernav {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    background-color: transparent;
+    width: 100%;
     padding: 5px;
 
-    .ContentContainer {
-        display: flex;
-        flex-direction: row;
-        
-        
-        width: 100%;
-        height: 100%;
+    .leftbarContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      background-color: #794604;
+    }
+    .rightBarContainer {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+      background-color: #794604;
+    }
+  }
+
+  .bottomContainerMainscreen {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(245, 2, 2);
+    width: 100%;
+    flex: 1;
+
     .leftMenuContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-right: 10px;
-        width: 300px;
-        height: 100%;
-        background-color: #794604;
-    }
-    .rightMenuContainer {
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin-right: 2px;
+      padding: px;
       
-
-        .userDataContainer {
-          
-            
-            width: 100%;
-            height: 100%;
-            background-color: #794604;
-        }
-       
     }
-
-}
+    .financialsContainer {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      height: 100%;
+     
+    }
+  }
 }

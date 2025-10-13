@@ -27,6 +27,6 @@ export const TabPanel = ({ index, children }) => {
   const { activeTab } = useTabs();
 
   return activeTab === index ? (
-    <div className="tab-panel">{children}</div>
+    <div className="tab-panel" style={{ height: '100%', width: '100%' }}>{children}</div>
   ) : null;
 };

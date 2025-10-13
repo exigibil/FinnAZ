@@ -8,30 +8,58 @@ import Financials from "../Financials/Financials.jsx";
 const MainScreen = () => {
   return (
     <div className={styles.mainScreenContainer}>
-      <div className={styles.ContentContainer}>
-        <div className={styles.leftMenuContainer}>
-          <LeftSideMenu />
+      
+      <div className={styles.topContainernav}> 
+
+        <div className={styles.leftbarContainer}>
+          <div> 
+                ICON MENU
+         </div>
+
+          </div>
+
+        <div className={styles.rightBarContainer}>
+          <NavigationBar />
         </div>
 
-        <div className={styles.rightMenuContainer}>
-          <div className={styles.userDataContainer}>
-            <NavigationBar />
-          </div>
-          <div>
+      </div>
+
+      <div className={styles.bottomContainerMainscreen}> 
+        <div className={styles.leftMenuContainer}>
+          <LeftSideMenu />
+        </div>  
+
+        <div className={styles.financialsContainer}>
             <Tabs defaultIndex={0}>
               <TabList>
                 <Tab index={0}>Dashboard</Tab>
                 <Tab index={1}>Financials</Tab>
               </TabList>
 
-              <TabPanel index={0}> <Dashboard /></TabPanel>
+              <TabPanel index={0}> <Dashboard /> </TabPanel>
               <TabPanel index={1}><Financials /></TabPanel>
             </Tabs>
           </div>
-        </div>
+
       </div>
+       
     </div>
   );
 };
 
 export default MainScreen;
+
+
+
+/*
+ 
+
+        <div className={styles.rightMenuContainer}>
+          <div className={styles.userDataContainer}>
+           <NavigationBar /> 
+          </div>
+          
+        </div>
+      </div>
+
+*/     
