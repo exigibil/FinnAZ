@@ -20,7 +20,9 @@ function FileInput() {
   };
   return (
     <div className={styles.fileInputContainer}>
-      <form>
+
+     <div  className={styles.formContainer}>
+       <form>
         <input type="month" id="start" name="start" min="2022-01" />
         <input type="reset" value="Reset" />
         <div>
@@ -28,9 +30,16 @@ function FileInput() {
          
         </div>
       </form>
+      </div>
+
 
       <div className={styles.financialsHeader}>
         <h3>Financials</h3>
+      </div>
+      <div className={styles.financialsDisponibile}> 
+        <div>Financiare Disponibile</div>
+        <div>Data Select:</div>
+  
       </div>
 
       <div className={styles.financialsContent}>
@@ -62,6 +71,7 @@ function FileInput() {
           //</div>
         )}
       </div>
+      
     </div>
   );
 }

@@ -18,10 +18,10 @@ const NavigationBar = () => {
   const [date, setDate] = useState(new Date());
   const [user, setUser] = useState("Topa Adrian");
   const [language, setLanguage] = useState("En");
- const [currency, setCurrency] = useState(() => {
-  const saved = localStorage.getItem("selectedCurrencies");
-  return saved ? JSON.parse(saved) : {};
-});
+  const [currency, setCurrency] = useState(() => {
+    const saved = localStorage.getItem("selectedCurrencies");
+    return saved ? JSON.parse(saved) : {};
+  });
   const [showModal, setShowModal] = useState(false);
 
   const dispatch = useDispatch();
@@ -37,15 +37,15 @@ const NavigationBar = () => {
   const loading = useSelector(selectExchangeLoading);
   const error = useSelector(selectExchangeError);
   const selectedCurrencyCodes = Object.keys(currency || {});
-  
+
   const toggleModal = () => {
     setShowModal(!showModal);
   };
-const handleSaveChanges = (updatedData) => {
-  setCurrency(updatedData);
-  localStorage.setItem("selectedCurrencies", JSON.stringify(updatedData));
-  setShowModal(false);
-};
+  const handleSaveChanges = (updatedData) => {
+    setCurrency(updatedData);
+    localStorage.setItem("selectedCurrencies", JSON.stringify(updatedData));
+    setShowModal(false);
+  };
 
   const handleOpenModal = () => {
     if (exchangeRate && Object.keys(exchangeRate).length > 1) {
@@ -63,16 +63,6 @@ const handleSaveChanges = (updatedData) => {
     <>
       <div className={styles.navigationBar}>
         <div className={styles.navigationBarLeft}>
-          <div className={styles.containerUser}>
-            <div className={styles.userName}>
-              User: <span>{user}</span>
-            </div>
-            <div className={styles.language}>
-              <MdLanguage />
-              <span>{language}</span>
-            </div>
-          </div>
-
           <div className={styles.bnrRate}>
             <div className={styles.rateTitleContainer}>
               <a
@@ -108,7 +98,17 @@ const handleSaveChanges = (updatedData) => {
               <TbCopyPlus />
             </div>
           </div>
-
+          <div className={styles.containerUser}>
+            <div className={styles.language}>
+              <MdLanguage />
+              <span>{language} </span>
+              <span className={styles.caret}>▼</span>
+              <span className={styles.caret}>|</span>
+            </div>
+            <div className={styles.userName}>
+              User: <span>{user}</span>
+            </div>
+          </div>
           <div className={styles.date}>
             <HiOutlineCalendarDateRange />
             <span>{moment(date).format("DD MMMM YYYY ")}</span>
@@ -122,7 +122,7 @@ const handleSaveChanges = (updatedData) => {
           isOpen={showModal}
           setCurrency={handleSaveChanges}
           currencies={exchangeRate}
-         alreadySelectedCurrencies={selectedCurrencyCodes}
+          alreadySelectedCurrencies={selectedCurrencyCodes}
         />
       )}
     </>

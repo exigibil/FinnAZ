@@ -1,53 +1,68 @@
-
 .fileInputContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    color: #333;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
 
-.financialsHeader{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 24px;
-        font-weight: bold;
-        color: #333;
-        margin-bottom: 20px;
+.financialsHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+.financialsDisponibile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+.financialsContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1600px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  color: #333;
+
+  .financialsTable {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
     }
-    .financialsContent {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        max-width: 1600px;
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        color: #333;
 
-        .financialsTable {
-            width: 100%;
-            border-collapse: collapse;
-
-            th, td {
-                padding: 12px;
-                text-align: left;
-                border-bottom: 1px solid #ddd;
-            }
-
-            th {
-                background-color: #f2f2f2;
-                font-weight: bold;
-            }
-
-            tr:hover {
-                background-color: #f1f1f1;
-            }
-        }
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
     }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+  }
+}

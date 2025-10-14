@@ -8,6 +8,7 @@ const Financials =() => {
         <div className={styles.financialsContainer}>
             <div> <FileInput /></div>
             
+            
         </div>
     )
 }
